@@ -6,7 +6,7 @@ INTRODUCTION
 Something someone could do is expand on the dataset for purposes of predicted seasonal sales. Given they would be a good prompt engineer someone could definitely expand on this dataset for their own practice or purpose. I actually didn’t realize the dataset was only for six months of data, but for this project and the practice of Machine Learning it was enough given my background in the restaurant industry the dataset made sense for my own personal predictions from practical real world experience as the hindsight to the understood task to creating an observation of day to day business trends for a business in the service industry. Overall I found the data to be accurate intuitively by design, and I’m glad I had the opportunity to learn. 
 DATASET
 The dataset I chose was based on simulated Coffee Shop sales from “Mavin Roasters” over a time period of six months. I found the dataset on Kaggle (https://www.kaggle.com/code/ahmedabbas757/coffee-shop-sales/input) where I had to format the data using the Pandas and Numpy libraries. I had to do some thinking and combined some of the data:
-# Convert 'transaction_date' to datetime and check order
+"""Convert 'transaction_date' to datetime and check order"""
 df['transaction_date'] = pd.to_datetime(df['transaction_date'], format='%m/%d/%Y')
 df['transaction_cost'] = df['transaction_qty'] * df['unit_price']
 print(df[['transaction_date', 'transaction_time', 'transaction_cost']].head(1000))
